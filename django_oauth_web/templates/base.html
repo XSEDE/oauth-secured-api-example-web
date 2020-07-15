@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+{% load static %}
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="description" content="XSEDE Globus OAuth Web Application and API Example">
+<META name="keywords" content="xsede,globus,oauth,web,api">
+<title>{% block title %}{% endblock %}</title>
+</HEAD>
+
+<BODY> 
+<h1>XSEDE Globus OAuth Web Application and API Example</h1>
+<h2><a href="/dictionary">Simple Dictionary Application</a></h2>
+
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<div id="content">
+{% block content %}{% endblock %}
+</div>
+</BODY>
+</HTML>

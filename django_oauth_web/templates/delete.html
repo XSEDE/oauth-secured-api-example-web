@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Delete a dictionary entry</h2>
+    <form action="/dictionary/ui/delete/{{ word }}/" method="post">
+      <label for="word">Word:</label><br>
+      <input type="text" id="word" name="word" disabled value="{{ word }}"><br>
+      <label for="definition">Definition:</label><br>
+      <input type="text" id="definition" name="definition" disabled value="{{ definition }}"><br><br>
+      <input type="submit" name="action" value="Delete">
+      <input type="submit" name="action" value="Cancel">
+    </form> 
+
+    <p>If you click the "Delete" button, the dictionary entry will be deleted.</p>
+
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,11 @@
+# Activate Pipenv environment
+$ pipenv shell
+
+# Django project initialize
+$ pipenv shell
+
+$ mkdir django_oauth_web
+$ django-admin.py startproject django_oauth_web django_oauth_web/
+$ cd django_oauth_web
+$ ./manage.py startapp example_ui
+$ ./manage.py startapp example_api

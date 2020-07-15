@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Add a new dictionary entry</h2>
+    <form action="/dictionary/ui/add/" method="post">
+      <table>
+      <tr><td><label for="word">Word:</label></td>
+          <td><input type="text" id="word" name="word" value=""</td>
+      </tr>
+      <tr><td><label for="definition">Definition:</label></td>
+          <td><textarea id="definition" name="definition" cols="60" rows="8" value=""></textarea></td>
+      <tr><td></td>
+      </table>
+      <input type="submit" name="action" value="Save">
+      <input type="submit" name="action" value="Cancel">
+    </form> 
+</body>
+</html>
+{% endblock %}

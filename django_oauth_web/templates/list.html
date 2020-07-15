@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>Dictionary List</h2>
+    <p>Click on a word to update or delete it.</p>
+    <table style="margin-left:2px" border=0 cellspacing=1 cellpadding=3>
+        <tr>
+            <th>Word</th>
+            <th>&nbsp;&nbsp;</th>
+            <th>Definition</th>
+        </tr>
+        {% for record in results %}
+        <tr>
+            <td><font size="+2"><a href="/dictionary/ui/update/{{ record.word }}/">{{ record.word }}</a></font></td>
+            <td></td>
+            <td>{{ record.definition }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+{% endblock %}
